@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY HOME</title>
+  <link rel="stylesheet" href="homestyle.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Begin header content (originally from includes/header.php) -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a  class="logo">
+          <img src="logo.png" alt=" MYHOME Logo">
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" data-toggler>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <nav class="main-nav">
+         <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#building">Building</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- End header content -->
+
+  <!-- CAROUSEL -->
+  <section class="slider">
+    <img src="lobbyoutside.jpeg" class="slide active" alt="Cozy Studio Apartment" />
+    <img src="lobby1.jpeg" class="slide" alt="Modern Shared Room" />
+    <img src="lobby2.jpeg" class="slide" alt="Spacious Dorm Suite" />
+    <div class="dots"></div>
+  </section>
+
+  <!-- SPOTLIGHT CARDS -->
+  <section class="spotlight container" id="rooms">
+    <h2>Rooms</h2>
+    <div class="cards">
+  <div class="card">
+    <img src="room.jpeg" alt="Compact Studio" />
+    <h3>Room</h3>
+    <p>Spacious single and double rooms featuring comfortable beds, study desks, built-in closets, and high-speed Wi-Fi—ideal for focused study and restful sleep.</p>
+  </div>
+  <div class="card">
+    <img src="kitchen.jpeg" alt="Shared Double Room" />
+    <h3>Kitchen</h3>
+    <p>Modern communal kitchen equipped with full-size appliances, ample counter space, and generous storage—perfect for preparing meals and socializing with fellow residents.</p>
+  </div>
+  <div class="card">
+    <img src="bathroom.jpeg" alt="Suite-Style Dorm" />
+    <h3>Bathrooms</h3>
+    <p>Clean, shared bathrooms featuring private shower stalls, vanities, and regular maintenance—providing a hygienic and comfortable experience for all occupants.</p>
+  </div>
+</div>
+
+  </section>
+
+  <!-- FEATURED LISTING -->
+  <section class="featured-recipe container" id="building">
+    <div class="recipe-image">
+      <img src="building2.jpeg" alt="Luxury Studio" />
+    </div>
+    <div class="recipe-info">
+      <h2>My Home Building</h2>
+      <div class="recipe-tags">
+        <span class="tag">Prime Location</span>
+      </div>
+      <ul class="recipe-meta">
+        <li><i class="fa-regular fa-user"></i> 2 roommates max</li>
+      </ul>
+      <p class="recipe-description">
+        This mid-rise apartment building in Achrafieh sits directly beside ABC Mall and just a block from Gitawi Hospital, offering unmatched convenience for shopping and healthcare. Its contemporary stone-and-glass façade opens into bright, open-plan units with private balconies overlooking Sursock Street. Residents also enjoy a rooftop terrace with city views and secure underground parking.
+      </p>
+      <a href="#contact" class="btn">View Details</a>
+    </div>
+  </section>
+
+  
+<section class="spotlight container">
+    <h2>Studios</h2>
+    <div class="cards">
+  <div class="card">
+    <img src="room.jpeg" alt="Compact Studio" />
+    <h3>Room</h3>
+<p>Spacious studio room with a large bed, built‐in wardrobe, and study desk, seamlessly flowing into the kitchenette and private bathroom for effortless living.</p>  </div>
+  <div class="card">
+    <img src="kitchen.jpeg" alt="Shared Double Room" />
+    <h3>Kitchen</h3>
+<p>Private bathroom featuring a tiled shower stall and modern vanity, directly accessible from the studio room, ensuring comfort and convenience without leaving your suite.</p>  </div>
+  <div class="card">
+    <img src="bathroom.jpeg" alt="Suite-Style Dorm" />
+    <h3>Bathrooms</h3>
+<p>Compact kitchenette equipped with a two‐burner stovetop, mini‐fridge, and ample cabinetry, connected to the studio room and bathroom for an all‐in‐one living experience.</p>  </div>
+</div>
+
+  </section>
+  <!-- STATS SECTION -->
+  <section id="stats">
+    <div class="stats-container">
+      <div class="stat">
+        <div class="icon"><i class="fa-solid fa-bed"></i></div>
+        <div class="number" data-target="123">0</div>
+        <div class="label">Leases Signed</div>
+      </div>
+      <div class="stat">
+        <div class="icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="number" data-target="50">0</div>
+        <div class="label">Happy Tenants</div>
+      </div>
+      <div class="stat">
+        <div class="icon"><i class="fas fa-key"></i></div>
+        <div class="number" data-target="35">0</div>
+        <div class="label">Rooms Occupied</div>
+      </div>
+      <div class="stat">
+        <div class="icon"><i class="fas fa-building"></i></div>
+        <div class="number" data-target="200">0</div>
+        <div class="label">Average Rent Price $</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & TESTIMONIALS -->
+  <section class="featured-on" id="about">
+    <div class="container">
+      <h2>
+        About Us
+      </h2>
+      <div class="arrow-toggle-wrapper" >
+        <span id="prev-toggle" class="arrow">&lt;</span>
+        <div class="toggle-content-wrapper">
+          <div id="about-text" class="toggle-content visible">
+            <h3>
+              My Home is dedicated to connecting students with ideal studio and shared-room options near campus. We simplify the search process, ensure transparent pricing, and offer listings verified by our team. Whether you're looking for a private studio or a roommate-friendly suite, we’ve got you covered.<br />
+              <strong>Find your perfect student space. Live comfortably. Study better.</strong>
+            </h3>
+          </div>
+          <div id="quote-slider" class="toggle-content">
+            <div class="quote active">
+              "Finding my first apartment was so easy thanks to The Dorm Collective!" – Karim, Junior
+            </div>
+            <div class="quote">"Great listings and responsive support. Highly recommend!" – Laila, Sophomore</div>
+            <div class="quote">"I love my new study nook. Best decision ever." – Tarek, Senior</div>
+          </div>
+        </div>
+        <span id="next-toggle" class="arrow">&gt;</span>
+      </div>
+    </div>
+  </section>
+
+<section class="spotlight container" id="contact">
+  <h2>Contact</h2>
+  <div class="cards">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d630.6895915121486!2d35.52184726950553!3d33.8914841115711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzI5LjMiTiAzNcKwMzEnMjEuMCJF!5e1!3m2!1sen!2slb!4v1749141826755!5m2!1sen!2slb"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+  
+
+<!-- Add this anywhere inside <body> -->
+<a href="https://wa.me/96103816683" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61577229983321&sk=about" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/96103816683"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#building">Building</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <!-- End footer content -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.main-nav');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  });
+</script>
+  <script>
+    // Carousel functionality
+    const slides = document.querySelectorAll(".slide");
+    const dotsContainer = document.querySelector(".dots");
+    let current = 0;
+    const interval = 3000;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("div");
+      dot.className = "dot" + (i === 0 ? " active" : "");
+      dot.addEventListener("click", () => goTo(i));
+      dotsContainer.append(dot);
+    });
+
+    function goTo(i) {
+      slides[current].classList.remove("active");
+      dotsContainer.children[current].classList.remove("active");
+      current = i;
+      slides[current].classList.add("active");
+      dotsContainer.children[current].classList.add("active");
+    }
+
+    setInterval(() => goTo((current + 1) % slides.length), interval);
+  </script>
+
+  <script>
+    // About/Testimonials toggle & stats counter
+    document.addEventListener("DOMContentLoaded", () => {
+      const aboutText = document.getElementById("about-text");
+      const quoteSlider = document.getElementById("quote-slider");
+      const quotes = quoteSlider.querySelectorAll(".quote");
+      const prevToggle = document.getElementById("prev-toggle");
+      const nextToggle = document.getElementById("next-toggle");
+
+      let currentSection = 0;
+      let quoteIndex = 0;
+
+      function showSection(index) {
+        currentSection = index;
+        if (index === 0) {
+          aboutText.classList.add("visible");
+          quoteSlider.classList.remove("visible");
+        } else {
+          aboutText.classList.remove("visible");
+          quoteSlider.classList.add("visible");
+        }
+      }
+
+      showSection(0);
+
+      prevToggle.addEventListener("click", () => {
+        showSection(currentSection === 0 ? 1 : 0);
+      });
+
+      nextToggle.addEventListener("click", () => {
+        showSection(currentSection === 1 ? 0 : 1);
+      });
+
+      setInterval(() => {
+        if (currentSection === 1) {
+          quotes[quoteIndex].classList.remove("active");
+          quoteIndex = (quoteIndex + 1) % quotes.length;
+          quotes[quoteIndex].classList.add("active");
+        }
+      }, 4000);
+
+      // Stats counter animation
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = +el.getAttribute("data-target");
+            const duration = 2000;
+            const frameRate = 60;
+            const totalFrames = Math.round((duration / 1000) * frameRate);
+            let frame = 0;
+            const countUp = () => {
+              frame++;
+              const progress = frame / totalFrames;
+              el.textContent = Math.floor(target * progress);
+              if (frame < totalFrames) {
+                requestAnimationFrame(countUp);
+              } else {
+                el.textContent = target;
+              }
+            };
+            requestAnimationFrame(countUp);
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll(".number").forEach(num => {
+        observer.observe(num);
+      });
+    });
+  </script>
+</body>
+</html>

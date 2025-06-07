@@ -1,0 +1,155 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #0066cc;
+  --color-secondary: #f4f4f4;
+  --color-accent: #ff9900;
+  --text-main: #333333;
+  --radius: 6px;
+  --transition: 0.3s ease-in-out;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 1rem;
+}
+.logo img{
+  width: 85px;
+  height: 60px;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+  max-width: 300px;
+  width: 50%;
+  height: 50%;
+
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+
+.nav-toggle {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--text-main);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555555;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.25rem;
+}
+
+
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .main-nav.open {
+    max-height: 80vh;      
+    overflow-y: auto;      
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .main-nav li + li {
+    border-top: 1px solid var(--shadow);
+  }
+  .main-nav a {
+    padding: 1rem;
+    display: block;
+    color: var(--text);
+  }
+  .logo img {
+        width: 80px;
+        height: 58px;
+    }
+}
+
